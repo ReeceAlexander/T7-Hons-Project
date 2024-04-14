@@ -141,7 +141,7 @@ class LiveAdvance():
                 pass
 
             # Move right if received command is 'left' and the power level is above 0.7
-            elif power >= 0.7:
+            else:
                 print("RIGHT    ", power)
                 self.left_motor.setVelocity(3.0)
                 self.right_motor.setVelocity(-3.0) 
